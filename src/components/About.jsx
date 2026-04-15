@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaCalendarAlt, FaProjectDiagram, FaLayerGroup, FaUsers } from 'react-icons/fa'
+import { FaCalendarAlt, FaProjectDiagram, FaLayerGroup, FaUsers, FaCode } from 'react-icons/fa'
 import { personalInfo, stats } from '../data/portfolioData'
 
 const iconMap = {
@@ -7,6 +7,7 @@ const iconMap = {
   FaProjectDiagram: FaProjectDiagram,
   FaLayerGroup: FaLayerGroup,
   FaUsers: FaUsers,
+  FaCode: FaCode,
 }
 
 const About = () => {
@@ -89,7 +90,7 @@ const About = () => {
             className="grid grid-cols-2 gap-4 lg:gap-6"
           >
             {stats.map((stat, index) => {
-              const Icon = iconMap[stat.icon]
+              const Icon = iconMap[stat.icon] || FaCode
               return (
                 <motion.div
                   key={stat.label}

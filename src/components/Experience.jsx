@@ -41,7 +41,7 @@ const Experience = () => {
           {/* Timeline Items */}
           <div className="space-y-12 lg:space-y-0">
             {experience.map((item, index) => {
-              const Icon = iconMap[item.icon]
+              const Icon = iconMap[item.icon] || FaCode
               const isLeft = index % 2 === 0
 
               return (

@@ -1,5 +1,22 @@
 import { motion } from 'framer-motion'
-import { FaReact, FaJs, FaJsSquare, FaCss3Alt, FaNodeJs, FaDatabase, FaServer, FaFire, FaGitAlt } from 'react-icons/fa'
+import { 
+  FaReact, 
+  FaJs, 
+  FaJsSquare, 
+  FaCss3Alt, 
+  FaNodeJs, 
+  FaDatabase, 
+  FaServer, 
+  FaFire, 
+  FaGitAlt,
+  FaPhp,
+  FaPython,
+  FaCode,
+  FaJava,
+  FaHtml5,
+  FaExchangeAlt,
+  FaBootstrap
+} from 'react-icons/fa'
 import { skills } from '../data/portfolioData'
 
 const iconMap = {
@@ -12,6 +29,13 @@ const iconMap = {
   FaServer: FaServer,
   FaFire: FaFire,
   FaGitAlt: FaGitAlt,
+  FaPhp: FaPhp,
+  FaPython: FaPython,
+  FaCode: FaCode,
+  FaJava: FaJava,
+  FaHtml5: FaHtml5,
+  FaExchangeAlt: FaExchangeAlt,
+  FaBootstrap: FaBootstrap,
 }
 
 const Skills = () => {
@@ -41,7 +65,7 @@ const Skills = () => {
         {/* Skills Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {skills.map((skill, index) => {
-            const Icon = iconMap[skill.icon]
+            const Icon = iconMap[skill.icon] || FaCode
             return (
               <motion.div
                 key={skill.name}

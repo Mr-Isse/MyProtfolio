@@ -22,7 +22,17 @@ export const skills = [
   { name: "React Native", level: 82, icon: "FaReact", color: "#61DAFB" },
   { name: "Firebase", level: 77, icon: "FaFire", color: "#FFCA28" },
   { name: "Git/GitHub", level: 88, icon: "FaGitAlt", color: "#F05032" },
-]
+  // New skills
+  { name: "PHP", level: 70, icon: "FaPhp", color: "#777BB4" },
+  { name: "Python", level: 75, icon: "FaPython", color: "#3776AB" },
+  { name: "C#", level: 65, icon: "FaCode", color: "#9B4F96" },
+  { name: "Java", level: 70, icon: "FaJava", color: "#007396" },
+  { name: "HTML", level: 95, icon: "FaHtml5", color: "#E34F26" },
+  { name: "CSS", level: 92, icon: "FaCss3Alt", color: "#1572B6" },
+  { name: "jQuery", level: 80, icon: "FaCode", color: "#0769AD" },
+  { name: "AJAX", level: 78, icon: "FaExchangeAlt", color: "#6C757D" },
+  { name: "Bootstrap", level: 90, icon: "FaBootstrap", color: "#7952B3" },
+];
 
 // Projects Data
 export const projects = [
