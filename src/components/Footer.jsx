@@ -155,7 +155,6 @@ const Footer = () => {
             transition={{ delay: 0.1 }}
             className="text-gray-400 text-sm flex items-center gap-2"
           >
-            Made with <FaHeart className="text-red-500 animate-pulse" /> using React & Tailwind CSS
           </motion.p>
         </div>
       </div>
